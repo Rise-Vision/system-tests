@@ -26,6 +26,8 @@ return emailScreenshot();
 function emailScreenshot() {
   transport.sendMail(message, function(err) {
     if(err){
+      console.log("\nThere was an error attempting to send mail.");
+      console.log("Is sendmail installed?\n");
       console.log(err);
       return 1;
     }else{

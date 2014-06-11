@@ -22,7 +22,7 @@ module.exports = function() {
         casper.waitForSelector('button[title="Upload"]:enabled', function() {
           casper.test.pass("Upload button is available");
         }, function() {
-          casper.capture("./screenshot-no-upload-button.jpg");
+          casper.capture("./screenshot-no-upload-button.png");
           casper.test.fail("Upload button is not available");
         }, 10000);
       });
